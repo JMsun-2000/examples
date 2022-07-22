@@ -425,7 +425,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = EQHXZ8M8AV;
+				DEVELOPMENT_TEAM = F2DFJFGVGV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -438,7 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.tensorflow.ObjectDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Google Development";
+				PROVISIONING_PROFILE_SPECIFIER = "Kivati_dev_Provisioning Profile_20220625";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -454,7 +454,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = EQHXZ8M8AV;
+				DEVELOPMENT_TEAM = F2DFJFGVGV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -467,7 +467,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.tensorflow.ObjectDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Google Development";
+				PROVISIONING_PROFILE_SPECIFIER = "Kivati_dev_Provisioning Profile_20220625";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

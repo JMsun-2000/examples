@@ -15,7 +15,7 @@
 import TensorFlowLiteTaskVision
 import UIKit
 
-class ViewController: UIViewController {
+class DetectViewController: UIViewController {
 
   // MARK: Storyboards Connections
   @IBOutlet weak var previewView: PreviewView!
@@ -160,7 +160,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: InferenceViewControllerDelegate Methods
-extension ViewController: InferenceViewControllerDelegate {
+extension DetectViewController: InferenceViewControllerDelegate {
   func viewController(
     _ viewController: InferenceViewController,
     didReceiveAction action: InferenceViewController.Action
@@ -191,7 +191,7 @@ extension ViewController: InferenceViewControllerDelegate {
 }
 
 // MARK: CameraFeedManagerDelegate Methods
-extension ViewController: CameraFeedManagerDelegate {
+extension DetectViewController: CameraFeedManagerDelegate {
 
   func didOutput(pixelBuffer: CVPixelBuffer) {
     // Drop current frame if the previous frame is still being processed.
@@ -368,7 +368,7 @@ extension ViewController: CameraFeedManagerDelegate {
 }
 
 // MARK: Bottom Sheet Interaction Methods
-extension ViewController {
+extension DetectViewController {
 
   // MARK: Bottom Sheet Interaction Methods
   /**
@@ -376,7 +376,7 @@ extension ViewController {
    */
   private func addPanGesture() {
     let panGesture = UIPanGestureRecognizer(
-      target: self, action: #selector(ViewController.didPan(panGesture:)))
+      target: self, action: #selector(DetectViewController.didPan(panGesture:)))
     bottomSheetView.addGestureRecognizer(panGesture)
   }
 

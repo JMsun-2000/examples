@@ -185,6 +185,22 @@ class CameraFeedManager: NSObject {
       completion(granted)
     }
   }
+    
+    func avOrientation() {
+        self.previewView.previewLayer.connection?.videoOrientation = UIOrientation_To_AVOrientation()
+        self.videoDataOutput.connection(with: .video)?.videoOrientation =  UIOrientation_To_AVOrientation()
+    }
+    
+    func UIOrientation_To_AVOrientation()-> AVCaptureVideoOrientation{
+    
+        switch UIDevice.current.orientation {
+        case .landscapeLeft:        return .landscapeRight
+        case .landscapeRight:       return .landscapeLeft
+        case .portrait:             return .portrait
+        case .portraitUpsideDown:   return .portraitUpsideDown
+        default:                    return .landscapeLeft
+        }
+    }
 
 
   /**

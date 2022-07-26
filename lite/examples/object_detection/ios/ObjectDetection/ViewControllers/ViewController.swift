@@ -102,6 +102,16 @@ class ViewController: UIViewController {
   override var preferredStatusBarStyle: UIStatusBarStyle {
     return .lightContent
   }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        cameraFeedManager.avOrientation()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        cameraFeedManager.avOrientation()
+    }
 
   // MARK: Button Actions
   @IBAction func onClickResumeButton(_ sender: Any) {
